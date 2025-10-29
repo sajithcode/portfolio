@@ -8,15 +8,15 @@ export interface Social {
 export const socials: Social[] = [
   {
     name: "GitHub",
-    url: "https://github.com/yourusername",
+    url: "https://github.com/sajithcode",
     icon: "github",
-    username: "@yourusername",
+    username: "@sajithcode",
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/yourprofile",
+    url: "https://www.linkedin.com/in/sajith-r-sampath/",
     icon: "linkedin",
-    username: "Your Name",
+    username: "Sajith R Sampath",
   },
   {
     name: "Twitter",
@@ -26,15 +26,15 @@ export const socials: Social[] = [
   },
   {
     name: "YouTube",
-    url: "https://youtube.com/@yourchannel",
+    url: "https://www.youtube.com/@codewith-leo",
     icon: "youtube",
-    username: "@yourchannel",
+    username: "@codewith-leo",
   },
   {
     name: "Email",
-    url: "mailto:your.email@example.com",
+    url: "mailto:sajithsampath721@gmail.com",
     icon: "mail",
-    username: "your.email@example.com",
+    username: "sajithsampath721@gmail.com",
   },
 ];
 
