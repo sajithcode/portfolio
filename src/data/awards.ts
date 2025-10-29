@@ -9,29 +9,28 @@ export interface Award {
 export const awards: Award[] = [
   {
     id: "1",
-    title: "Best UX Design - Hackathon 2024",
-    issuer: "University Tech Summit",
-    date: "Mar 2024",
-    description: "Awarded for outstanding user experience in healthcare booking system",
+    title: "DevOps Pre-Requisite Course",
+    issuer: "KodeKloud",
+    date: "FEB 2025",
+    description:
+      "Completed foundational DevOps concepts and tools prerequisite course",
   },
   {
     id: "2",
-    title: "Dean's List",
-    issuer: "University Name",
-    date: "Fall 2023",
-    description: "Recognized for academic excellence with GPA above 3.75",
+    title: "Postman API Fundamentals Student Expert",
+    issuer: "Postman",
+    date: "MAY 2024",
   },
   {
     id: "3",
-    title: "AWS Certified Cloud Practitioner",
-    issuer: "Amazon Web Services",
-    date: "Jan 2024",
+    title: "Programming with JavaScript",
+    issuer: "Meta, Coursera",
+    date: "JULY 2023",
   },
   {
     id: "4",
-    title: "Open Source Contributor Badge",
-    issuer: "GitHub",
-    date: "2023",
-    description: "Contributed to 10+ open-source projects",
+    title: "Server-side Web Programming",
+    issuer: "University of Moratuwa",
+    date: "MARCH 2023",
   },
 ];
