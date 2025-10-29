@@ -1,11 +1,19 @@
 import { motion } from "framer-motion";
-import { Briefcase, Code, Heart, MapPin, Calendar } from "lucide-react";
+import {
+  Briefcase,
+  Code,
+  Heart,
+  MapPin,
+  Calendar,
+  Globe,
+  PlayCircle,
+} from "lucide-react";
 import { experiences } from "@/data/experience";
 
-const iconMap = {
-  internship: Briefcase,
-  project: Code,
-  volunteer: Heart,
+const titleIconMap = {
+  Webmaster: Globe,
+  "Volunteer Developer": Heart,
+  "YouTube Content Creator": PlayCircle,
 };
 
 export const Experience = () => {
@@ -29,7 +37,7 @@ export const Experience = () => {
 
         <div className="max-w-4xl mx-auto">
           {experiences.map((exp, index) => {
-            const Icon = iconMap[exp.type];
+            const Icon = titleIconMap[exp.title];
             return (
               <motion.div
                 key={exp.id}
