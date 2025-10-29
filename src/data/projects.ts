@@ -28,7 +28,7 @@ export const projects: Project[] = [
     links: {
       github: "https://github.com/LedgerVote",
     },
-    images: ["/placeholder.svg"],
+    images: ["/ledgervote_img.png"],
     problem:
       "Traditional electronic voting systems struggle to prove integrity and resist tampering while preserving voter privacy.",
     approach:
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     links: {
       github: "https://github.com/sajithcode/CloudExpiry-Cloud-Based-File-Sharing",
     },
-    images: ["/placeholder.svg"],
+    images: ["/cloudexpiry_img.png"],
     problem:
       "Sharing sensitive files often leaves lingering copies in storage, creating security and compliance risks.",
     approach:
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     links: {
       github: "https://github.com/sajithcode/conversation_student_registration_susl",
     },
-    images: ["/placeholder.svg"],
+    images: ["/convocation-registration-susl_img.png"],
     problem:
       "Manual or fragmented registration processes cause data inconsistencies and poor student experience.",
     approach:
