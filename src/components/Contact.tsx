@@ -101,11 +101,11 @@ export const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto space-y-12">
           {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
@@ -199,15 +199,17 @@ export const Contact = () => {
 
           {/* Social Links */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
             <div>
-              <h3 className="text-2xl font-bold mb-6">Connect With Me</h3>
-              <div className="space-y-4">
+              <h3 className="text-2xl font-bold mb-6 text-center">
+                Connect With Me
+              </h3>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {socials
                   .filter((s) => s.icon !== "twitter")
                   .map((social, index) => {
@@ -218,12 +220,12 @@ export const Contact = () => {
                         href={social.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1, duration: 0.3 }}
-                        whileHover={{ x: 5 }}
-                        className="flex items-center gap-4 p-4 rounded-lg bg-card border border-border hover:border-primary transition-colors group"
+                        whileHover={{ y: -5 }}
+                        className="flex flex-col items-center gap-2 p-4 rounded-lg bg-card border border-border hover:border-primary transition-colors group text-center"
                       >
                         <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
                           <Icon className="w-6 h-6 text-primary" />
