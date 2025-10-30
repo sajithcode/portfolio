@@ -1,5 +1,5 @@
 export const aboutData = {
-  bio: "I'm a passionate Software Engineering intern with a love for building elegant, user-centered web applications. Currently pursuing my degree in Computer Science, I combine technical skills with creative problem-solving to deliver high-quality solutions. When I'm not coding, you'll find me contributing to open-source projects or learning the latest web technologies.",
+  bio: "I'm a passionate Software Engineering intern with a love for building elegant, user-centered web applications. Currently pursuing my degree in Computing and Information Systems, I combine technical skills with creative problem-solving to deliver high-quality solutions. When I'm not coding, you'll find me contributing to open-source projects or learning the latest web technologies.",
   highlights: [
     {
       title: "Clean Code",
