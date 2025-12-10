@@ -86,7 +86,7 @@ export const Hero = () => {
             >
               <Code2 className="w-6 h-6 text-primary" />
               <h2 className="text-2xl md:text-3xl text-muted-foreground">
-                Software Engineer Intern
+                Full Stack Developer
               </h2>
             </motion.div>
 
