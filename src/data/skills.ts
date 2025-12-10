@@ -10,7 +10,7 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "Frameworks",
-    skills: ["ReactJS", "Springboot", "Laravel", "Express", "Next.js"],
+    skills: ["ReactJS", "Springboot", "ASP.NET Core", "Laravel", "Express"],
   },
   {
     category: "Web Technologies",
@@ -29,7 +29,7 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "Database Management",
-    skills: ["MySQL", "MongoDB"],
+    skills: ["MySQL", "Microsoft SQL Server"],
   },
   {
     category: "Version Control",
