@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Badge } from "@/components/ui/badge";
+import { SkillsPopover } from "@/components/SkillsPopover";
 import { skills } from "@/data/skills";
 
 export const Skills = () => {
@@ -47,12 +47,7 @@ export const Skills = () => {
                     }}
                     whileHover={{ scale: 1.05, y: -2 }}
                   >
-                    <Badge
-                      variant="secondary"
-                      className="px-3 py-1.5 text-xs md:text-sm font-normal hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
-                    >
-                      {skill}
-                    </Badge>
+                    <SkillsPopover skill={skill} />
                   </motion.div>
                 ))}
               </div>
