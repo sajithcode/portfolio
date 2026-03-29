@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Code2, Sparkles } from "lucide-react";
+import { ArrowRight, Code2, Sparkles, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TechIconCloud } from "./TechIconCloud";
+import { Typewriter } from "./Typewriter";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -61,7 +62,7 @@ export const Hero = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-primary/10 text-primary mb-4 md:mb-6"
+              className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-primary text-white mb-4 md:mb-6"
             >
               <Sparkles className="w-4 h-4" />
               <span className="text-sm font-medium">
@@ -78,17 +79,7 @@ export const Hero = () => {
               Hi, I'm <span className="text-primary">Sajith R Sampath</span>
             </motion.h1>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="flex items-center gap-2 justify-center lg:justify-start mb-4 md:mb-6"
-            >
-              <Code2 className="w-6 h-6 text-primary" />
-              <h2 className="text-2xl md:text-3xl text-muted-foreground">
-                Full Stack Developer
-              </h2>
-            </motion.div>
+            <Typewriter />
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -161,6 +152,29 @@ export const Hero = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Scroll Down Button */}
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 0.6 }}
+          className="absolute -bottom-28 left-1/2 transform -translate-x-1/2"
+        >
+          <motion.button
+            animate={{ y: [0, 8, 0] }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            onClick={() => scrollToSection("about")}
+            className="flex flex-col items-center justify-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+            aria-label="Scroll down"
+          >
+            <span className="text-xs md:text-sm font-medium">Scroll Down</span>
+            <ChevronDown className="w-5 h-5 md:w-6 md:h-6" />
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   );

@@ -60,7 +60,7 @@ export const Navbar = () => {
           "fixed top-0 left-0 right-0 z-40 transition-all duration-300",
           isScrolled
             ? "bg-background/80 backdrop-blur-md border-b border-border shadow-sm"
-            : "bg-transparent"
+            : "bg-transparent",
         )}
       >
         <div className="container mx-auto px-4">
@@ -82,8 +82,8 @@ export const Navbar = () => {
                   variant="ghost"
                   onClick={() => scrollToSection(item.id)}
                   className={cn(
-                    "relative hover:bg-primary/10 hover:text-primary transition-colors",
-                    activeSection === item.id && "text-primary font-medium"
+                    "relative hover:bg-primary/15 hover:text-primary transition-all duration-300",
+                    activeSection === item.id && "text-primary font-semibold",
                   )}
                 >
                   {item.label}
@@ -147,9 +147,9 @@ export const Navbar = () => {
                   variant="ghost"
                   onClick={() => scrollToSection(item.id)}
                   className={cn(
-                    "justify-start hover:bg-primary/10 hover:text-primary transition-colors",
+                    "justify-start hover:bg-primary/15 hover:text-primary transition-all duration-300",
                     activeSection === item.id &&
-                      "bg-muted text-primary font-medium"
+                      "bg-primary/20 text-primary font-semibold",
                   )}
                 >
                   {item.label}
