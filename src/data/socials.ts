@@ -38,4 +38,4 @@ export const socials: Social[] = [
   },
 ];
 
-export const resumeUrl = "/resume.pdf"; // Place your resume in public folder
+export const resumeUrl = "/CV_Sajith.pdf"; // Place your resume in public folder
