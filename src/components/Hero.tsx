@@ -85,7 +85,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 max-w-2xl"
+              className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-2xl"
             >
               Crafting elegant, performant web applications with modern
               technologies. Passionate about clean code and exceptional user

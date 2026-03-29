@@ -31,7 +31,7 @@ export const Skills = () => {
               transition={{ delay: categoryIndex * 0.1, duration: 0.5 }}
               className="space-y-4"
             >
-              <h3 className="text-xl font-semibold text-foreground border-l-4 border-primary pl-4">
+              <h3 className="text-lg font-semibold text-foreground border-l-4 border-primary pl-4">
                 {category.category}
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -49,7 +49,7 @@ export const Skills = () => {
                   >
                     <Badge
                       variant="secondary"
-                      className="px-3 py-1.5 text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
+                      className="px-3 py-1.5 text-xs md:text-sm font-normal hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
                     >
                       {skill}
                     </Badge>
