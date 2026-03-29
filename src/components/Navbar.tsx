@@ -115,19 +115,25 @@ export const Navbar = () => {
             {/* Mobile Menu Button */}
             <div className="flex md:hidden items-center gap-2">
               <ThemeToggle />
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => setIsOpen(!isOpen)}
-                aria-label="Toggle menu"
-                aria-expanded={isOpen}
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
               >
-                {isOpen ? (
-                  <X className="h-6 w-6" />
-                ) : (
-                  <Menu className="h-6 w-6" />
-                )}
-              </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setIsOpen(!isOpen)}
+                  aria-label="Toggle menu"
+                  aria-expanded={isOpen}
+                  className="hover:bg-primary/20 hover:text-primary transition-colors duration-300"
+                >
+                  {isOpen ? (
+                    <X className="h-6 w-6" />
+                  ) : (
+                    <Menu className="h-6 w-6" />
+                  )}
+                </Button>
+              </motion.div>
             </div>
           </div>
         </div>
