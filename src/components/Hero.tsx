@@ -62,7 +62,7 @@ export const Hero = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-primary text-white mb-4 md:mb-6"
+              className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-primary text-white mb-4 md:mb-6 mt-8 md:mt-0"
             >
               <Sparkles className="w-4 h-4" />
               <span className="text-sm font-medium">
