@@ -57,7 +57,8 @@ export const projects: Project[] = [
       "An individual project for ephemeral file sharing. Users upload files and receive time-limited links; upon expiry, files are purged from both object storage (MinIO) and the relational database. Built with a React front end and an Express.js backend orchestrated via Docker.",
     tech: ["React", "Express.js", "MySQL", "MinIO", "Docker"],
     links: {
-      github: "https://github.com/sajithcode/CloudExpiry-Cloud-Based-File-Sharing",
+      github:
+        "https://github.com/sajithcode/CloudExpiry-Cloud-Based-File-Sharing",
     },
     images: ["/cloudexpiry_img.png"],
     problem:
@@ -88,7 +89,8 @@ export const projects: Project[] = [
       "Contributed to a live Laravel application used each year by Sabaragamuwa University of Sri Lanka students for convocation registration. Work focused on improving usability, correctness, and data accuracy in core flows.",
     tech: ["PHP", "Laravel", "MySQL", "Bootstrap"],
     links: {
-      github: "https://github.com/sajithcode/conversation_student_registration_susl",
+      github:
+        "https://github.com/sajithcode/conversation_student_registration_susl",
     },
     images: ["/convocation-registration-susl_img.png"],
     problem:
@@ -109,10 +111,6 @@ export const projects: Project[] = [
     ],
   },
 ];
-
-
-
-
 
 // export interface Project {
 //   slug: string;

@@ -80,7 +80,7 @@ export const Projects = () => {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="w-full sm:flex-1"
+                      className="w-full sm:flex-1 hover:bg-primary hover:text-white hover:border-primary transition-colors"
                       asChild
                     >
                       <a
