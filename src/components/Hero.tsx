@@ -65,9 +65,24 @@ export const Hero = () => {
               className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-primary text-white mb-4 md:mb-6 mt-8 md:mt-0"
             >
               <Sparkles className="w-4 h-4" />
-              <span className="text-sm font-medium">
-                Available for Internships
-              </span>
+              <div className="inline-flex items-center gap-1 text-sm font-medium">
+                <span>Available for</span>
+                <div className="inline-block relative overflow-hidden h-5 w-24 align-middle">
+                  <motion.div
+                    animate={{ y: [0, -20, -40, 0] }}
+                    transition={{
+                      duration: 8,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                    className="flex flex-col"
+                  >
+                    <span>Internships</span>
+                    <span>Associate</span>
+                    <span>Positions</span>
+                  </motion.div>
+                </div>
+              </div>
             </motion.div>
 
             <motion.h1
