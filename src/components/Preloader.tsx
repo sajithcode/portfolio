@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
-import paperplaneAnimation from "../../public/animations/paperplane.json";
+import { useIsMobile } from "@/hooks/use-mobile";
+import paperplaneAnimation from "../../src/animations/paperplane.json";
 
 export const Preloader = () => {
+  const isMobile = useIsMobile();
+  const animationSize = isMobile ? 200 : 400;
+
   return (
     <motion.div
       initial={{ opacity: 1 }}
@@ -15,7 +19,7 @@ export const Preloader = () => {
           animationData={paperplaneAnimation}
           loop={true}
           autoplay={true}
-          style={{ width: 400, height: 400 }}
+          style={{ width: animationSize, height: animationSize }}
         />
 
         {/* Loading Text */}
